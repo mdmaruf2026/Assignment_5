@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- tailwind + daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Assignment5</title>
+
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="items-center justify-center">
+
+ <div class="main p-8">
+        <!-- logo -->
+    <div class="logo w-[200px] mx-auto " >
+        <img src="assets/github-logo.png" alt="" class="mx-auto w-[100px] h-[100px] mb-6">
+    </div>
+    <!-- logo_text -->
+     <div class="logo_text text-center mb-6">
+        <h2 class="font-semibold  mx-auto text-[24px]">GitHub Issues Tracker</h2>
+        <p class="text-[16px]">Sign in to manage your issues</p>
+     </div>
+    
+    <!-- sign_up_form -->
+    <div class="form">
+        <div class="card bg-base-100 w-full max-w-[520px] shrink-0 shadow mx-auto">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-[16px] text-[#1F2937] font-medium">Username</label>
+          <input id="input-Username" type="email" class="input text-[16px] p-4 rounded-md text-[#64748B] w-full" placeholder="Enter Username" />
+          <label class="label mb-4 text-[14px] text-[#4A00FF]">Default: admin</label>
+          
+          <label class="label text-[16px] text-[#1F2937] font-medium">Password</label>
+          <input id="input-password" type="password" class="input text-[16px] p-4 rounded-md text-[#64748B] w-full" placeholder="Enter Password" />
+          <label class="label mb-6 text-[14px] text-[#4A00FF]">Default: admin123</label>
+        </fieldset>
+        <button id="signIn-btn" class="btn btn-neutral p-4 mb-6 text-[16px] rounded-xl bg-[#4A00FF] text-[#FFFFFF] font-semibold">Sign In</button>
+        
+        <div class="relative flex py-5 items-center">
+        <div class="flex-grow border-t border-[#E4E4E7]"></div>
+        <span class="flex-shrink mx-4 text-[#1F2937] text-sm font-medium">OR</span>
+        <div class="flex-grow border-t border-[#E4E4E7]"></div>
+        </div>
+        <p class="mx-auto text-center text-[14px] text-[#64748B] mb-2">Demo Credentials</p>
+
+        <!-- sign_up_form_bottom -->
+        <div class="sign_up_form_bottom p-6 align-middle">
+            <p class="mx-auto text-center text-[16px]">
+            <span class="text-[#1F2937] font-semibold">Username:</span>
+            <span class="text-[#1F2937] font-regular">admin</span>
+            </p>
+            <p class="mx-auto text-center text-[16px]">
+            <span class="text-[#1F2937] font-semibold">Password:</span>
+            <span class="text-[#1F2937] font-regular">admin123</span>
+            </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+    <script src="javascript/signIn.js"></script>
+</body>
+</html>
