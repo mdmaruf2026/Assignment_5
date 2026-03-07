@@ -69,7 +69,7 @@
         </div>
 
         <!-- header button -->
-        <div class="header_bar mt-[60px] w-[120px] h-[40px] text-base flex gap-[8px] mx-[245px] mb-[16px] ">
+        <div class="header_bar mt-[60px] w-[120px] h-[40px] text-base flex gap-[8px] mx-[245px] mb-[16px]">
             <button class="text-[#FFFFFF] bg-[#4A00FF] font-semibold px-[50px] py-[8px] rounded-sm">All</button>
             <button class="text-[#64748B] font-medium  rounded-sm border px-[40px] py-[8px]">Open</button>
             <button class="text-[#64748B] font-medium  rounded-sm border px-[40px] py-[8px]">Closed</button>
@@ -80,22 +80,22 @@
     <main class="px-[245px]">
         
         <!-- main header part -->
-        <div class="mainHeaderPart flex gap-[8px]  ">
+        <div class="mainHeaderPart flex gap-[8px] mb-6">
             <div class="mainHeaderImg">
                 <img src="assets/Aperture.png" alt="" class="w-[50px] h-[50px]">
             </div>
-            <div class="mainHeaderTextLeft w-[838px]">
+            <div class="mainHeaderTextLeft flex-1 ">
                 <p class="font-semibold text-[#1F2937] text-xl" >50 Issues</p>
                 <p class="font-normal text-[#64748B] text-base">Track and manage your project issues</p>
             </div>
-            <div class="mainHeaderTextRight flex gap-4 text-base text-[#1F2937] font-medium">
+            <div class="mainHeaderTextRight flex gap-4 text-base text-[#1F2937] font-medium justify-between">
                 <button class="">
-                    <span class="w-3 h-3 bg-green-500 rounded-full"><i class="fa-solid fa-circle"></i>
+                    <span class="w-3 h-3 text-[#00A96E]"><i class="fa-solid fa-circle"></i>
                     </span>
                     Open
                 </button>
                 <button class="">
-                    <span class="w-3 h-3 bg-purple-600 rounded-full"><i class="fa-solid fa-circle"></i>
+                    <span class="w-3 h-3 text-[#A855F7]"><i class="fa-solid fa-circle"></i>
                     </span>
                     closed
                 </button>
@@ -104,8 +104,9 @@
         
         <!-- main card section -->
 
+        <div class="mainCardContainer1 grid grid-cols-4 gap-3 gap-y-3">
         <!-- main card for high -->
-        <div class="CardContainerHIGH w-[256.5px] h-[257px] border border-[#64748B]  border-t-4 border-t-[#00A96E] mt-6 px-4">
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E]  px-4">
 
             <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
                <div class="cardHeaderImg">
@@ -146,14 +147,14 @@
             </div>
             </div>
 
-            <div class="HIGHcardMainBottom mt-5">
+            <div class="HIGHcardMainBottom mt-5 mb-5">
                 <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
                 <p class="text-xs text-[#64748B]">1/15/2024</p>
             </div>
         </div>
         
         <!-- main card for medium -->
-        <div class="CardContainerMEDIUM w-[256.5px] h-[257px] border border-[#64748B]  border-t-4 border-t-[#00A96E] mt-6 px-4">
+        <div class="CardContainerMEDIUM w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
 
             <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
                <div class="cardHeaderImg">
@@ -194,14 +195,14 @@
             </div>
             </div>
 
-            <div class="HIGHcardMainBottom mt-5">
+            <div class="HIGHcardMainBottom mt-5 mb-5">
                 <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
                 <p class="text-xs text-[#64748B]">1/15/2024</p>
             </div>
         </div>
 
         <!-- main card for  normal low -->
-        <div class="CardContainerLOW w-[256.5px] h-[257px] border border-[#64748B]  border-t-4 border-t-[#A855F7] mt-6 px-4">
+        <div class="CardContainerLOW w-full h-auto border border-[#64748B]  border-t-4 border-t-[#A855F7] px-4">
 
             <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
                <div class="cardHeaderImg">
@@ -242,14 +243,110 @@
             </div>
             </div>
 
-            <div class="HIGHcardMainBottom mt-5">
+            <div class="HIGHcardMainBottom mt-5 mb-5">
                 <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
                 <p class="text-xs text-[#64748B]">1/15/2024</p>
             </div>
         </div>
 
-      <!-- main card for one enhancement low -->
-            <div class="CardContainerLOW w-[256.5px] h-[257px] border border-[#64748B]  border-t-4 border-t-[#A855F7] mt-6 px-4">
+        <!-- main card for high -->
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E]  px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FEECEC] text-[#EF4444] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    HIGH
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+                <!-- main card for high -->
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E]  px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FEECEC] text-[#EF4444] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    HIGH
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+               <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+       <!-- main card for one enhancement low -->
+            <div class="CardContainerLOW w-full h-auto border border-[#64748B]  border-t-4 border-t-[#A855F7] px-4">
 
             <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
                <div class="cardHeaderImg">
@@ -282,12 +379,495 @@
             </div>
             </div>
 
-            <div class="HIGHcardMainBottom mt-5">
+            <div class="HIGHcardMainBottom mt-5 mb-5">
                 <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
                 <p class="text-xs text-[#64748B]">1/15/2024</p>
             </div>
         </div>
-    
+
+        <!-- main card for medium -->
+        <div class="CardContainerMEDIUM w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FFF6D1] text-[#F59E0B] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    MEDIUM
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+         <!-- main card for high -->
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FEECEC] text-[#EF4444] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    HIGH
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+                        <!-- main card for high -->
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FEECEC] text-[#EF4444] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    HIGH
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+               <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+         
+        <!-- main card for medium -->
+        <div class="CardContainerMEDIUM w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FFF6D1] text-[#F59E0B] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    MEDIUM
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+        <!-- main card for  normal low -->
+        <div class="CardContainerLOW w-full h-auto border border-[#64748B]  border-t-4 border-t-[#A855F7] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#EEEFF2] text-[#9CA3AF] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    LOW
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+        
+                        <!-- main card for high -->
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FEECEC] text-[#EF4444] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    HIGH
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+               <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+         <!-- main card for high -->
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FEECEC] text-[#EF4444] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    HIGH
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+               <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+         
+        <!-- main card for medium -->
+        <div class="CardContainerMEDIUM w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E]  px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FFF6D1] text-[#F59E0B] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    MEDIUM
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+        
+        <!-- main card for  normal low -->
+        <div class="CardContainerLOW w-full h-auto border border-[#64748B]  border-t-4 border-t-[#A855F7]  px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#EEEFF2] text-[#9CA3AF] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    LOW
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+         <!-- main card for high -->
+        <div class="CardContainerHIGH w-full h-auto border border-[#64748B]  border-t-4 border-t-[#00A96E] px-4">
+
+            <div class="HIGHcard flex items-center mt-4 justify-between w-full ">
+               <div class="cardHeaderImg">
+                <img src="assets/Open-Status.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="btnHigh">
+                    <button class="cardButton bg-[#FEECEC] text-[#EF4444] text-center      font-medium text-xs rounded-xl px-4 py-1">
+                    HIGH
+                </button>
+                </div>
+
+            </div>
+            <div class="HIGHcardMain">
+                <p class="font-semibold text-[14px] text-[#1F2937] mt-2 mb-1" >
+                Fix navigation menu on mobile devices</p>
+                <p class="font-normal text-[12px] text-[#64748B]">
+                    The navigation menu doesn't collapse properly on mobile devices..
+                </p>
+            </div>
+
+            <div class="MainButtonContainer flex justify-start gap-2 mt-3">
+            
+                <div class="HIGHcardMainButton1 flex items-center gap-1 rounded-full border border-[#EF4444] px-1 py-1">
+                <div class="HIGHcardMainButton1Icon text-[#EF4444] ">
+                     <i class="fa-solid fa-bug"></i>
+                </div>
+                <div class="HIGHcardMainButton1Name text-[#EF4444] text-xs font-medium">
+                    <p>BUG</p>
+                </div>
+            </div>
+            <div class="HIGHcardMainButton2 flex items-center gap-1 rounded-full border border-[#D97706] px-2 py-1">
+                <div class="HIGHcardMainButton2Icon text-[#D97706]">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div class="HIGHcardMainButton2Name text-[#D97706] text-xs font-medium">
+                    <p>HELP WANT</p>
+                </div>
+            </div>
+            </div>
+
+               <div class="HIGHcardMainBottom mt-5 mb-5">
+                <p class="pb-1 text-xs text-[#64748B] ">#1 by john_doe</p>
+                <p class="text-xs text-[#64748B]">1/15/2024</p>
+            </div>
+        </div>
+
+    </div>
     </main>
 
 </body>
