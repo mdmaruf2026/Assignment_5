@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- tailwind + daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Assignment5</title>
+
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm pl-20 pr-20">
+        <div class="navbar-start">
+        <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        </div>
+            <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a>Item 1</a></li>
+            <li>
+            <a>Parent</a>
+            <ul class="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+            </ul>
+            </li>
+            <li><a>Item 3</a></li>
+            </ul>
+        </div>
+
+            <!-- navbar left size -->
+            <a class="btn btn-ghost text-xl">
+                <img src="assets/github-logo.png" alt="" class="w-[36px] h-[37px]">
+                GitHub Issues Tracker</a>
+            </div>
+            <!-- navbar right size -->
+         <div class="navbar-end hidden lg:flex gap-[10px]">
+            <form class="flex items-center gap-[16px]">
+                
+                <div class="search relative flex items-center ">
+                    <i class="fa-brands fa-sistrix absolute left-3"></i> 
+                    <input type="text" placeholder= "Search issues..." class="rounded-sm pl-10 align-middle"> 
+                </div>
+                <button class="bg-purple-600 text-white px-[16px] py-[12px] rounded-sm flex-auto"><i class="fa-solid fa-plus"></i> New Issue
+                </button>
+                </form>       
+        </div>
+        </div>
+
+        <!-- header button -->
+        <div class="header_bar mt-[60px] w-[120px] h-[40px] text-base flex gap-[8px] mx-[245px] mb-[16px] ">
+            <button class="text-[#FFFFFF] bg-[#4A00FF] font-semibold px-[50px] py-[8px] ">All</button>
+            <button class="text-[#64748B] font-medium px-[12px]">Open</button>
+            <button class="text-[#64748B] font-medium px-[12px]">Closed</button>
+        </div>
+    </header>
+        
+    <!-- main section start -->
+    <main class="px-[245px]">
+        
+        <div class="mainHeaderPart flex gap-[8px]">
+            <div class="mainHeaderImg">
+                <img src="assets/Aperture.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="mainHeaderTextLeft w-[838px]">
+                <p class="font-semibold text-[#1F2937] text-xl" >50 Issues</p>
+                <p class="font-normal text-[#64748B] text-base">Track and manage your project issues</p>
+            </div>
+            <div class="mainHeaderTextRight flex gap-4 text-base text-[#1F2937] font-medium">
+                <button class="">
+                    <span class="w-3 h-3 bg-green-500 rounded-full"><i class="fa-solid fa-circle"></i>
+                    </span>
+                    Open
+                </button>
+                <button class="">
+                    <span class="w-3 h-3 bg-purple-600 rounded-full"><i class="fa-solid fa-circle"></i>
+                    </span>
+                    closed
+                </button>
+            </div>
+        </div>  
+    </main>
+
+</body>
+</html>
