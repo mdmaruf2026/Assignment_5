@@ -204,7 +204,24 @@ async function openIssueModal(issueId){
     }
 
     showLoading();
+
+    try {
+        const res = await fetch(`https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchText}`);
+        const data = await res.json();
+        
+        if (data.data.length > 0) {
+            displayIssues(data.data);
+        } else {
+            issuesContainer.innerHTML = `<p class="col-span-full text-center py-10 text-gray-500">No issues found for "${searchText}"</p>`;
+        }
+    } catch (error) {
+        console.log("Error searching issues:", error);
+    } finally {
+        hideLoading();
     }
+    }
+
+    document.getElementById("searchForm").addEventListener("submit", handleSearch);
 
     loadIssues();
 
