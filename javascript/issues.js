@@ -1,5 +1,6 @@
 const issuesContainer = document.getElementById("issuesContainer");
 const loadingSpinner = document.getElementById("loadingSpinner");
+const IssuesNumber = document.getElementById("IssuesNumber");
 
 // modal
 const modalTitle = document.getElementById("modalTitle");
@@ -92,6 +93,7 @@ function toggle(tab){
 
 // display issue part
 function displayIssues(issues){
+    IssuesNumber.innerText=issues.length;
     console.log(issues);
     const issueContainer = document.getElementById("issuesContainer");
     issueContainer.innerHTML = "";
