@@ -13,6 +13,8 @@ document.getElementById("signIn-btn").addEventListener("click",function(){
     // 3.match the username and password
     if(username=="admin" && password=="admin123"){
         alert("Sign In successful");
+
+        window.location.href = "issues.html"; 
     }
     else{
         alert("Sign In failed");
